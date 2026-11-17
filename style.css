@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #6545b5;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    gap: 25px;
+}
+
+.settings {
+    width: 30%;
+    padding: 20px;
+    background: #f3f0ff;
+    border-radius: 10px;
+}
+
+.settings h2,
+.editor-section h2 {
+    margin-bottom: 20px;
+    color: #6545b5;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #6545b5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #432c85;
+}
+
+.reset {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.editor-section {
+    width: 70%;
+}
+
+#editor {
+    min-height: 350px;
+    padding: 20px;
+    border: 2px solid #6545b5;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.7;
+    background: white;
+    color: #222;
+    outline: none;
+    white-space: pre-wrap;
+}
+
+.clear {
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .settings, .editor-section {
+        width: 100%;
+    }
+}

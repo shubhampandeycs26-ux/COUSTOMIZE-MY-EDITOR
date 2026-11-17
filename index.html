@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize My Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Customize My Editor</h1>
+    <p class="subtitle">Create your own writing style!</p>
+
+    <div class="main">
+
+        <div class="settings">
+            <h2>Editor Settings</h2>
+
+            <label>Background Colour</label>
+            <input type="color" id="bgColor" value="#ffffff">
+
+            <label>Text Colour</label>
+            <input type="color" id="textColor" value="#222222">
+
+            <label>Font Family</label>
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+
+            <label>Font Size</label>
+            <input type="range" id="fontSize" min="12" max="40" value="18">
+
+            <div class="buttons">
+                <button onclick="formatText('bold')">Bold</button>
+                <button onclick="formatText('italic')">Italic</button>
+                <button onclick="formatText('underline')">Underline</button>
+            </div>
+
+            <button class="reset" onclick="resetEditor()">Reset Settings</button>
+        </div>
+
+        <div class="editor-section">
+            <h2>Your Text Editor</h2>
+
+            <div id="editor" contenteditable="true">
+                Hello! Welcome to My Text Editor.
+
+                Start typing here and customize your text using the settings.
+            </div>
+
+            <button class="clear" onclick="clearText()">Clear Text</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
